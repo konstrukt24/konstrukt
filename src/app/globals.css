@@ -25,15 +25,14 @@ a, p {
   mix-blend-mode: difference;
 }
 
-.page-content {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  backgroung: url("/video/background.MP4");
+.videoContainer {
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (min-width: 1920px) {
-  a, p {
-    font-size: 15px;
-  }
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
